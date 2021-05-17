@@ -12,24 +12,34 @@
 
 ## Project Overview
 
-This project aims to implement a room occupancy sensing system that uses on-board Thingy52 environmental sensors to measure the number of people in a room. This project has real-world relevance with current social restrictions in place that limit the number of people allowed in indoor spaces.
+This project aims to implement a room occupancy sensing system that uses on-board Thingy52 environmental sensors to measure the number of people in a room. This project has real-world relevance with current social restrictions in place that limit the number of people allowed in indoor spaces. A series of sensor nodes will be placed around the room and read CO2 levels which will be relayed back to a base node using BLE communication and serialised for processing on a PC using a machine learning model to determine the room occupancy.
+
+**Project Extensions**
+
+* A Particle Argon board will be located at the entry door of the room which is being monitored. When the maximum occupancy count of the room is reached, the Argon will display a red LED to notify people not to enter the room and will display a green LED otherwise. The Argon will receive this information from the base node connected to the PC.
+* The LEDs on the Thingy52 devices will blink at a rate which is proportional to the current CO2 levels being detected in the monitored room. Faster blinking means that the CO2 levels are higher.
 
 ## Project Performance
 
 The performance of the project will be measured using a number of metrics to determine the overall quality of the project outcome. The key-performance indicators used to measure this are displayed below:
 
-Key-Performance Indicator  | Status | Target
----------------------------|--------|------------------------------------
-Reliable Bluetooth Network |Good    | Stable ( < 2% communication issues)
+Key-Performance Indicator                          | Status                | Target
+---------------------------------------------------|-----------------------|------------------------------------------------
+Reliable Bluetooth Network                         | Good                  | Stable ( < 2% communication issues)
+Reliable Sensor Data Retrieval                     | Good                  | Stable 4Hz Reading
+Machine Learning model data has suitably low RMSE  | Further Work Required |
+Model can correctly determine room occupancy count | Further Work Required | 20% Error
+
 
 ## System Overview
 
-See the ____.pdf document in the git repository for a graphical system overview of the project.
+See the ____.pdf document in the git repository for a block diagram of the system hardware architecture.
 
 ## Sensor Integration
 
 **CCS811 (Gas Sensor)**  
-This gas sensor is used to measure the CO2 levels. The sensor will be read by the Thingy52 at a 4Hz rate.
+This gas sensor is used to measure the CO2 levels. The sensor will be read by the Thingy52 at a 4Hz rate.  
+The Zephyr library functions will be used to read the sensor values so that individual registers are not required to be read.
 
 ## Wireless Network Communication
 
