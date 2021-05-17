@@ -8,6 +8,10 @@ Brodie Rogers (45299823)
 
 ---
 
+## 1.0 Team Roles
+###Riley Norris
+###Brodie Rogers
+
 ## 1.1 Project Overview
 
 This project aims to implement a room occupancy sensing system that uses on-board Thingy52 environmental sensors to measure the number of people in a room. This project has real-world relevance with current social restrictions in place that limit the number of people allowed in indoor spaces. A series of sensor nodes will be placed around the room and read CO2 levels which will be relayed back to a base node using BLE communication and serialised for processing on a PC using a machine learning model to determine the room occupancy.
