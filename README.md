@@ -51,7 +51,7 @@ See below for a block diagram of the overall architecture, abstracted into major
 
 **CCS811 (Gas Sensor)**  
 This gas sensor is used to measure the CO2 and TVOC levels. The sensor will be read by the Thingy52 at the maximum 4Hz rate.  
-The Zephyr library functions will be used to read the sensor values so that individual registers are not required to be read.
+The Zephyr library functions will be used to read the sensor values so that individual registers are not required to be read.  
 The Thingy52 devices will be placed around the room and measure air-quality using the CCS811. The sensor values will be averaged in the python script for total room CO2 and TVOC levels. 
 
 ## 1.5 Wireless Network Communication
