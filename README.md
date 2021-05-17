@@ -13,6 +13,9 @@ Brodie Rogers (45299823)
 ### Brodie Rogers
 I am responsible for the low level C code running on the sensor nodes and base node. This includes communication software (i.e. BLE), sensor data retrieval, device GPIO and LEDs, and serial communication with the host PC. These roles see me designining the communication frames and logic and timing behind the communication between the various nodes. I also am in charge of any device side logic that occurs before data is forwarded to the host PC, this includes bitwise operations, data manipulation and data formatting.
 
+See below for a team photo:  
+![TeamPhoto](https://user-images.githubusercontent.com/84297669/118475104-2cfcda80-b74f-11eb-8a65-6ed5ceac7053.jpg)  
+  
 ## 1.1 Project Overview
 
 This project aims to implement a room occupancy sensing system that uses on-board Thingy52 environmental sensors to measure the number of people in a room. This project has real-world relevance with current social restrictions in place that limit the number of people allowed in indoor spaces. A series of sensor nodes will be placed around the room and read CO2 levels which will be relayed back to a base node using BLE communication and serialised for processing on a PC using a machine learning model to determine the room occupancy.
