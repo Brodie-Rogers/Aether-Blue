@@ -41,9 +41,9 @@ System can alert room occupants of possible breach of room capacity | Further Wo
 
 ## 1.3 System Overview
 The system consists of multiple nodes;
-* Sensor nodes - these nodes collect environmental (air quality) data and transmit them to the base node via bluetooth using the later defind data frames. These nodes will also be used for displaying some amount of data, i.e. led colour and blink rate.
-* Base node - this node is responsible for recieving envrionmental data from the sensor nodes, and sending it to the connected host pc via serial link. This base node will also then be able to transmit to the sensor nodes and display node to indicate room occupency
-* Display node - in this case, the Particle Argon is a display node, i.e. will recieve data via bluetooth from the base node and display/indicate room occupency/capacity.
+* Sensor nodes - these nodes collect environmental (air quality) data and transmit them to the base node via bluetooth using the later defind data frames. These nodes will also be used for displaying some amount of data, i.e. led colour and blink rate. The sensor nodes also utilise I2C communication to retrieve data from the CCS811 envrionmental air quality sensor.  
+* Base node - this node is responsible for recieving envrionmental data from the sensor nodes, and sending it to the connected host pc via serial link. This base node will also then be able to transmit to the sensor nodes and display node to indicate room occupency.
+* Display node - in this case, the Particle Argon is a display node, i.e. will recieve data via bluetooth from the base node and display/indicate room occupency/capacity.  
 See below for a block diagram of the overall architecture, abstracted into major hardware blocks:
 ![BlockDiagram](https://user-images.githubusercontent.com/84297669/118449561-a1774f80-b736-11eb-9cf7-6ea66ce63faa.png)  
 
