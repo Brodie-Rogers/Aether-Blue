@@ -33,6 +33,7 @@ Model can correctly determine room occupancy count | Further Work Required | 20%
 
 ## System Overview
 
+![BlockDiagram](https://user-images.githubusercontent.com/84297669/118449561-a1774f80-b736-11eb-9cf7-6ea66ce63faa.png)
 See the ____.pdf document in the git repository for a block diagram of the system hardware architecture.
 
 ## Sensor Integration
