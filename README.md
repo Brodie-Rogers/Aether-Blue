@@ -64,7 +64,7 @@ See below for a message protocol diagram and utilised data frames:
 Preliminary testing will use a k-nearest neighbours (kNN) model however it is not expected that this model will produce sufficient results for the project.  
 Based on other published works in this research area, a support-vector machine (SVM) model will also be implemented to try and improve reliability and accuracy of the model.  
 Testing will be required to determine whether the model is accurate enough to use a regression model with rounding to the nearest occupant count or whether classification is a more suitable method and occupancy count should be grouped in intervals of 0, 1-2, 3-5, 6-10 people for example.  
-Data for the ML model will be the raw CO2 and TVOC levels as well as the rate of change over time which will be used in conjunction with baseline values obtained from an empty room.
+Data for the ML model will be the raw CO2 and TVOC levels as well as the rate of change over time which will be used in conjunction with baseline values obtained from an empty room.  
 The predicted room occupancy output will be smoothed by a suitable Kalman filter to lower the effect of noisy data.
 
 ## 2 Equipment
