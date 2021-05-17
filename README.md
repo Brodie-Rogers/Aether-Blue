@@ -9,8 +9,9 @@ Brodie Rogers (45299823)
 ---
 
 ## 1.0 Team Roles
-###Riley Norris
-###Brodie Rogers
+### Riley Norris
+### Brodie Rogers
+I am responsible for the low level C code running on the sensor nodes and base node. This includes communication software (i.e. BLE), sensor data retrieval, device GPIO and LEDs, and serial communication with the host PC. These roles see me designining the communication frames and logic and timing behind the communication between the various nodes. I also am in charge of any device side logic that occurs before data is forwarded to the host PC, this includes bitwise operations, data manipulation and data formatting.
 
 ## 1.1 Project Overview
 
