@@ -47,6 +47,9 @@ The wireless network model being used for this project is Bluetooth Low-Energy (
 Thingy52 sensor nodes will broadcast sensor values to a nRF52840 Dongle at the same rate that sensor values are read from the device.  
 The Dongle will serialise the data and send through the PC script which will then display it graphically on a graphical user interface (GUI) and also on a web dashboard such as Tagio.
 
+See below for a message protocol diagram and utilised data frames:
+![Protocol](https://user-images.githubusercontent.com/84297669/118473241-181f4780-b74d-11eb-881d-a01334df8d08.png)  
+
 ## 1.6 Algorithm Schemes
 
 Preliminary testing will use a k-nearest neighbours (kNN) model however it is not expected that this model will produce sufficient results for the project.  
